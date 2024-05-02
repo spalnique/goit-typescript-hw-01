@@ -1,4 +1,5 @@
 // type PageStatus = 'open' | 'close';
+
 enum PageStatus {
   open = 'open',
   close = 'close',
