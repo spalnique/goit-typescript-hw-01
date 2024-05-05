@@ -1,16 +1,18 @@
-// type PageStatus = 'open' | 'close';
-
 enum PageStatus {
   open = 'open',
   close = 'close',
 }
+
+type PageDetails = {
+  [prop: string]: Date;
+};
 
 interface IPage {
   title: string;
   likes: number;
   accounts: [...string[]];
   status: PageStatus;
-  details?: { createAt: Date; updateAt: Date };
+  details?: PageDetails;
 }
 
 const page1: IPage = {
