@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "push": "echo 'Enter commit message: ' && read message && git add . && git commit -m \"$message\" && git push"
   },
   "devDependencies": {
     "typescript": "^5.2.2",

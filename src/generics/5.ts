@@ -7,8 +7,8 @@ export enum UserRole {
 type UserRoleProps = Record<UserRole, string>;
 
 // Замініть наступний код на версію за допомогою Record
-const RoleDescription: UserRoleProps = {
-  admin: 'Admin User',
-  editor: 'Editor User',
-  guest: 'Guest User',
+export const RoleDescription: UserRoleProps = {
+  [UserRole.admin]: 'Admin User',
+  [UserRole.editor]: 'Editor User',
+  [UserRole.guest]: 'Guest User',
 };
